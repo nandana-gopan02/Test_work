@@ -1,0 +1,119 @@
+.middle{
+  display: grid;
+  grid-template-columns: 640px 300px;
+
+}
+
+.container{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.status-panel{
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 1000px;
+  height: 200px;
+}
+.zero-input{
+  margin: 5px;
+  width: 40px;
+}
+
+/* AXIS */
+.axis-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 150px);   
+  gap: 8px;
+  justify-content: start;                    
+}
+
+.axis-card{
+  display: grid;
+  place-items: center;
+  border: 0.5px solid black;
+  align-items: center;
+  padding: 2px 5px 8px;
+}
+
+
+/* Encoder */
+.encode-panel{
+  border: 0.5px solid black;
+  width: 400px;
+  height: 400px;
+}
+
+.encode-box{
+ height: 300px;
+}
+
+.encode-header{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  
+}
+.encode-note{
+  padding: 0px 18px;
+  
+}
+
+.encode-enc{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 25px;
+  padding: 10px;
+  
+}
+
+.encode-row{
+  display: grid;
+  grid-template-columns: 55px 50px 60px;   
+  align-items: center;
+  column-gap: 8px;
+  
+}
+
+
+
+.encode-box-space{
+  width: 40px;
+}
+
+/* InOut */
+.input-output-panel{
+  border: 0.5px solid black;
+  width: 400px;
+  height: 637px;
+}
+.row-title{
+  display: flex;
+  align-items: center;
+  padding: 0px 35px;
+  gap: 150px;
+  margin-bottom: 8px;
+}
+.row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.input{
+  /* background-color: bisque; */
+  display: grid; 
+  padding: 10px 15px ; 
+  gap: 10px;
+}
+.output{
+  /* background-color: aquamarine; */
+  display: grid;
+  padding: 7px ; 
+  gap: 10px;
+}
+.output-box{
+  display: flex;
+  
+}
