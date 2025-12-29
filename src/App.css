@@ -9,17 +9,84 @@
   grid-template-columns: auto auto;
 }
 
+.heading{
+  display: grid;
+  place-items: center;
+}
+
+/* Status */
 .status-panel{
   border: 1px solid black;
-  padding: 10px;
+  padding: 0px 12px 10px;
+  margin: 10px;           /*adjust */
+  width: 1070px;
+  height: 180px;
+}
+
+.real-time label{
+  margin-bottom: 5px;
+}
+
+.real-time{
+  display: grid;
+  grid-template-columns: repeat(9,auto) ;
+  gap: 8px;
   margin-bottom: 15px;
-  width: 1000px;
-  height: 200px;
+  align-items: center;
+  margin-top: 10px;
 }
+
 .zero-input{
-  margin: 5px;
-  width: 40px;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  border: 1px solid #ccc; 
 }
+
+.row-control{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.field label{
+  margin-right: 10px;
+}
+
+.button-group{
+  display: flex;
+  gap: 13px;
+}
+
+.row-button-left{
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+/* POPUP */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+  background: white;
+  padding: 50px;
+  border-radius: 6px;
+  width: 250px;
+  text-align: center;
+}
+
 
 /* AXIS */
 .axis-grid{
@@ -31,22 +98,38 @@
 
 .axis-card{
   display: grid;
-  place-items: center;
+  /* place-items: center; */
   border: 0.5px solid black;
   align-items: center;
   padding: 2px 5px 8px;
 }
 
+.axis-input{
+  width: 40px;
+}
+
+.axis-field label{
+  margin-right: 10px;
+}
+.axis-field-speed label{
+  margin-right: 40px;
+}
+.axis-button-group{
+  display: flex;
+  gap: 15px;
+  margin: 12px 25px;
+}
 
 /* Encoder */
 .encode-panel{
   border: 0.5px solid black;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 350px;
 }
 
 .encode-box{
  height: 300px;
+ margin-top: 19px;
 }
 
 .encode-header{
@@ -77,9 +160,6 @@
   column-gap: 8px;
   
 }
-
-
-
 .encode-box-space{
   width: 40px;
 }
@@ -87,14 +167,15 @@
 /* InOut */
 .input-output-panel{
   border: 0.5px solid black;
-  width: 400px;
+  width: 300px;
   height: 637px;
 }
 .row-title{
   display: flex;
   align-items: center;
   padding: 0px 35px;
-  gap: 150px;
+  gap: 110px;
+  margin-top: 19px;
   margin-bottom: 8px;
 }
 .row{
@@ -107,6 +188,14 @@
   padding: 10px 15px ; 
   gap: 10px;
 }
+.input-box{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  gap: 10px;
+}
+.input-box-space{
+  width: 18px;
+}
 .output{
   /* background-color: aquamarine; */
   display: grid;
@@ -114,6 +203,10 @@
   gap: 10px;
 }
 .output-box{
-  display: flex;
-  
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  gap: 10px;
+}
+.output-button{
+  width: 40px;
 }

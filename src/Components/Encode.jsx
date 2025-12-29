@@ -6,7 +6,7 @@ function Encode() {
     
     <>
     <div className='encode-panel'>
-        <h3>Encoder Positions</h3>
+        <div className='heading'>Encoder Positions</div>
         <div className='encode-box'>
             <div className='encode-header'>
                 <input type="checkbox"/>
