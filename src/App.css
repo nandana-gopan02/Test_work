@@ -7,6 +7,7 @@
 .container{
   display: grid;
   grid-template-columns: auto auto;
+  
 }
 
 .heading{
@@ -19,7 +20,7 @@
   border: 1px solid black;
   padding: 0px 12px 10px;
   margin: 10px;           /*adjust */
-  width: 1070px;
+  width: 1100px;
   height: 180px;
 }
 
@@ -93,7 +94,8 @@
   display: grid;
   grid-template-columns: repeat(4, 150px);   
   gap: 8px;
-  justify-content: start;                    
+  justify-content: start; 
+  margin-left: 10px;                   
 }
 
 .axis-card{
@@ -123,8 +125,10 @@
 /* Encoder */
 .encode-panel{
   border: 0.5px solid black;
-  width: 500px;
-  height: 350px;
+  width: 450px;
+  height: 330px;
+  margin-left: 10px;
+  padding: 8px;
 }
 
 .encode-box{
@@ -164,11 +168,15 @@
   width: 40px;
 }
 
+
 /* InOut */
 .input-output-panel{
   border: 0.5px solid black;
   width: 300px;
-  height: 637px;
+  height: 600px;
+  margin-top: 10px;
+  margin-right: 30px;
+  padding: 10px;
 }
 .row-title{
   display: flex;
