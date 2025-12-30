@@ -13,15 +13,15 @@ const handleStart=()=>{
   setStoppopup(false);
 }
 
-  const handleStop= () => {
+const handleStop= () => {
     const newValues=Array.from({length :8},()=>
     Math.floor(10000000 + Math.random()*90000000).toString());
     setGeneratedValue(newValues);
-    setShowpopup(true);
     setStoppopup(true);
+    setShowpopup(true);
+   
 
-  }
-
+}
 
 const handleOk=()=>{
   if(stoppopup){
@@ -83,7 +83,7 @@ const resetValue=()=>{
                 ? "Generated Values on STOP"
                 : "Current Real-Time Values on START"}</h3>
             {generatedValue.map((value,id)=>(
-                <input key={id} type='text' value={value}/>
+                <p key={id}>{value}</p>
             ))}
             <br />
             <button onClick={handleOk}>OK</button>

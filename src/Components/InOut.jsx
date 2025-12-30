@@ -13,7 +13,7 @@ function InOut() {
 
         <div className='row'>
             <div className='input'>
-                {input.fill(0).map(i=>(
+                {input.map((_,i)=>(
                     <div key={i} className='input-box'>
                        <input className='input-box-space' />
                        <input className='input-box-space' />
@@ -24,7 +24,7 @@ function InOut() {
             </div>
 
             <div className='output'>
-                {output.fill(0).map(i=>(
+                {output.map((_,i)=>(
                     <div key={i} className='output-box'>
                         <button className='output-button'>OFF</button>
                         <button className='output-button'>OFF</button>
@@ -38,7 +38,7 @@ function InOut() {
 
         <div className='row'>
             <div className='input'>
-                {input.fill(0).map(i=>(
+                {input.map((_,i)=>(
                     <div key={i} className='input-box'>
                        <input className='input-box-space' />
                        <input className='input-box-space' />
@@ -49,7 +49,7 @@ function InOut() {
             </div>
 
             <div className='output'>
-                {output.fill(0).map(i=>(
+                {output.map((_,i)=>(
                     <div key={i} className='output-box'>
                         <button className='output-button'>OFF</button>
                         <button className='output-button'>OFF</button>
